@@ -5,7 +5,9 @@
 body {
   margin: 0;
   padding: 0px;
-  background: #fff;
+  background: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* Add a black background color to the top navigation */
 .topnav {
@@ -178,4 +180,34 @@ body {
   width: 100px;
   height: 30px;
   margin-top: 10px;
+}
+.firstsection{
+  height: 100vh;
+}
+
+.head{
+  display: flex;
+  justify-content: center;
+ 
+}
+.head h1{
+  font-size: 50px;
+}
+
+.head p{
+  color: #fff;
+}
+.imgs{
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  
+
+}
+
+.imgs img{
+  width: 400px;
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
 }

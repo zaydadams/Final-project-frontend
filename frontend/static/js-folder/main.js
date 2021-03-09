@@ -61,6 +61,8 @@ function logIN() {
   console.log(log);
 
   if (log.length > 0) {
+    let usern = document.getElementById("usermail").value;
+    localStorage.setItem("thank_you", JSON.stringify(usern));
     alert("You have successfully logged in");
     window.location.href = "./static/htmlfolder/Home.html";
   } else {
@@ -95,4 +97,23 @@ function insertUsers() {
 function sign_out() {
   alert("You have successfully signed out");
   window.location.href = "/frontend/index.html";
+}
+
+// Get the modal
+var mode = document.getElementById("myModal");
+var btn = document.getElementById("myyBtn");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  mode.style.display = "block";
+}
+
+span.onclick = function() {
+  mode.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    mode.style.display = "none";
+  }
 }

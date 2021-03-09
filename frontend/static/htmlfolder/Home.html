@@ -8,6 +8,13 @@
     <title>My Blog</title>
 </head>
 <body>
+  <div class="preloader">
+    <div class="loader">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
     <section id="firstsection">
         <div class="topnav" id="myTopnav">
             <a class="active" href="Home.html"><i class="fa fa-fw fa-home"></i>Home</a>
@@ -21,7 +28,6 @@
                   <a href="street.html">Street racing</a>
                 </div>
               </div>
-            <a href="contactme.html">Contact</a> 
             <a href="about.html">About</a>
             <button  class="btnclick" onclick="sign_out()">signout</button>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
@@ -35,7 +41,13 @@
            <img src="/frontend/assets/images/martin-katler-71MFodxIz8c-unsplash.jpg" width="100%">
             <p><b>Nissan GTR 2021 version?</b></p>
             <p>The iconic beast from japan always getting a new version each year but what will the japanese giants do this year, releasing a number amount of cars will the 2021 gtr be one of it. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur necessitatibus, nemo pariatur voluptatum possimus architecto accusamus nulla maiores laudantium minima modi molestiae commodi aut ea eos ducimus, minus eius dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, libero deserunt. Minus modi accusamus suscipit quos soluta cumque non laboriosam exercitationem! Vel vitae saepe ipsa similique quibusdam officia consequuntur aliquid. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, dolor illo doloremque suscipit recusandae sint numquam aspernatur facilis itaque nostrum voluptate, modi omnis facere aliquid voluptas atque officiis quidem sequi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, vel, dignissimos quibusdam modi animi consequuntur esse ullam laborum nemo libero cumque impedit, totam dolore nostrum voluptas. Praesentium doloremque nemo nam.</p>
-            <button id="mybtn"><a href="#">Continue reading</a></button>
+            <button id="myyBtn">Continue reading</button>
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repellat tenetur dolorum repudiandae eveniet officiis ipsum, ducimus non molestiae optio, beatae illo fuga nam cum labore ipsam perspiciatis? Modi, ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, nostrum ea pariatur voluptatum eveniet saepe ipsa eaque libero nam unde in dicta quod numquam eum quas veniam neque repudiandae excepturi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus perspiciatis quibusdam, fugit, ratione commodi quos laudantium explicabo repudiandae, saepe unde voluptatem necessitatibus. Libero praesentium iste, temporibus consectetur sequi accusantium. Ex!</p>
+              </div>
+            </div>
           </div>
           <div class="card">
             <h2>TITLE HEADING</h2>
@@ -60,6 +72,7 @@
             <div class="fakeimg">
               <img src="/frontend/assets/images/auto-3102299_1280.jpg">
               <p>The mustang 500 is a iconic car</p>
+              <button id="mybtn">read more</button>
             </div>
             <div class="fakeimg">
               <img src="/frontend/assets/images/auto-3102299_1280.jpg">
