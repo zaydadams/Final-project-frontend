@@ -36,7 +36,7 @@ window.onclick = function (event) {
 };
 let users;
 
-fetch("http://127.0.0.1:5000/login/")
+fetch("https://enigmatic-sea-74675.herokuapp.com/login/")
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
@@ -74,7 +74,7 @@ function insertUsers() {
   const form = document.getElementById("register");
   const inputs = form.getElementsByTagName("input");
 
-  fetch("http://127.0.0.1:5000/register/", {
+  fetch("https://enigmatic-sea-74675.herokuapp.com/register/", {
     method: "POST",
     body: JSON.stringify({
       name: inputs[0].value,
