@@ -96,7 +96,7 @@ function insertUsers() {
 }
 function sign_out() {
   alert("You have successfully signed out");
-  window.location.href = "/frontend/index.html";
+  window.location.href = "/index.html";
 }
 
 // Get the modal

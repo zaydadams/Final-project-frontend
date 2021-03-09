@@ -26,7 +26,7 @@ body {
 
 /* Add an active class to highlight the current page */
 .active {
-  background-color: #f88436;
+  background-color: #ff7300;
   color: white;
 }
 
@@ -196,7 +196,7 @@ body {
   align-items: center;
   width: 380px;
   height: 480px;
-  background: rgb(216, 72, 15);
+  background: #ff7300;
 }
 
 .input-group-register {
