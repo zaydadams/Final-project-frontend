@@ -10,11 +10,11 @@ function getCars(){
               <div class="title">
                   <h2>${post.title}</h2>
               </div>
+              <div class="image">
+                  <img src=${post.image} alt=${post.image} />
+              </div>
               <div class="message">
                   <p>${post.description}</p>
-              </div>
-              <div class="image">
-                  <img src=${post.image} alt=${post.title} />
               </div>
           </div>
           `;
