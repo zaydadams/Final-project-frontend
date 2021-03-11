@@ -1,120 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/cssfolder/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/static/cssfolder/preloader.css">
-    <title>My Blog</title>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="/static/cssfolder/main.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/static/cssfolder/preloader.css" rel="stylesheet">
+	<title>My Blog</title>
 </head>
 <body>
-  <div class="preloader">
-    <div class="loader">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
-    <section id="firstsection">
-        <div class="topnav" id="myTopnav">
-            <a class="active" href="Home.html"><i class="fa fa-fw fa-home"></i>Home</a>
-            <div class="dropdown">
-                <button class="dropbtn">Content
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="latest.html">Latest cars</a>
-                  <a href="classics.html">Add Blogs</a>
-                  <a href="street.html">User Blogs</a>
-                </div>
-              </div>
-            <a href="contact.html">Contact Me</a>
-            <a href="about.html">About</a>
-            <button  class="btnclick" onclick="sign_out()">signout</button>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-          </div>
-    </section><br>
-    <section id="secondsection">
-      <div class="row">
-        <div class="leftcolumn">
-          <div class="card">
-            <h2>Gear-up</h2>
-           <img src="/assets/images/martin-katler-71MFodxIz8c-unsplash.jpg" width="100%">
-            <p><b>Welcome to my Blog</b></p>
-            <p>Here you will find a variety of latest news on new cars entering the automotive industry </p>
-            <button id="myyBtn">Continue reading</button>
-            <div id="myModal" class="modal">
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repellat tenetur dolorum repudiandae eveniet officiis ipsum, ducimus non molestiae optio, beatae illo fuga nam cum labore ipsam perspiciatis? Modi, ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, nostrum ea pariatur voluptatum eveniet saepe ipsa eaque libero nam unde in dicta quod numquam eum quas veniam neque repudiandae excepturi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus perspiciatis quibusdam, fugit, ratione commodi quos laudantium explicabo repudiandae, saepe unde voluptatem necessitatibus. Libero praesentium iste, temporibus consectetur sequi accusantium. Ex!</p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <h2>gallery</h2>
-            <div class="gallery">
-            <img src="/assets/images/martin-katler-71MFodxIz8c-unsplash.jpg">
-            <img src="/assets/images/martin-katler-71MFodxIz8c-unsplash.jpg">
-            <img src="/assets/images/martin-katler-71MFodxIz8c-unsplash.jpg">
-            <img src="/assets/images/martin-katler-71MFodxIz8c-unsplash.jpg">
-          </div>
-            <div class="fakeimg" style="height:200px;"></div>
-          </div>
-        </div>
-        <div class="rightcolumn">
-          <div class="card">
-            <h3>Popular Post</h3>
-            <div class="fakeimg">
-              <img src="/assets/images/auto-3102299_1280.jpg">
-              <p>The mustang 500 is a iconic car</p>
-            </div>
-            <div class="fakeimg">
-              <img src="/assets/images/auto-3102299_1280.jpg">
-              <p>The mustang 500 is a iconic car</p>
-            </div>
-            <div class="fakeimg"><img src="/assets/images/auto-3102299_1280.jpg">
-              <p>The mustang 500 is a iconic car</p></div>
-            <div class="fakeimg"><img src="/assets/images/auto-3102299_1280.jpg">
-              <p>The mustang 500 is a iconic car</p></div>
-          </div>  
-        </div>
-      </div>
-    </section>
-    <section id="thirdsection">
-      <div class="vids">
-      <h2>Latests News</h2>
-
-    <div class="rows">
-      <div class="columns" style="background-color:#333;">
-        <h3>The R34</h4>
-        <img src="/assets/images/andre-tan-dWXJqx7ywLk-unsplash.jpg">
-        
-      </div>
-      <div class="columns" style="background-color:#333;">
-        <h3>BMW M4 2021</h3>
-        <img src="/assets/images/2021-bmw-m4-coupe-111-1600787953.jpg">
-          
-        </div>
-        <div class="columns" style="background-color:#333;">
-          <h3>Supra from hell</h3>
-          <img src="/assets/images/auto-3102299_1280.jpg">
-          
-        </div>
-        <div class="columns" style="background-color:#333;">
-          <h3>Column 4</h3>
-          <img src="/assets/images/JDM_ NISSAN SKYLINE r34.jpeg">
-          
-        </div>
-      </div>
-    </div>
-
-    </section>
-    <footer>
-      <p>Copyrights &2020</p>
-    </footer>
-    <script src="/static/js-folder/main.js"></script>
-
-    
+	<div class="preloader">
+		<div class="loader">
+			<span></span> <span></span> <span></span>
+		</div>
+	</div>
+	<section id="firstsection">
+		<div class="topnav" id="myTopnav">
+			<a class="active" href="Home.html"><i class="fa fa-fw fa-home"></i>Home</a>
+			<div class="dropdown">
+				<button class="dropbtn">Content <i class="fa fa-caret-down"></i></button>
+				<div class="dropdown-content">
+					<a href="latest.html">Latest cars</a> <a href="classics.html">Add Blogs</a> <a href="street.html">User Blogs</a>
+				</div>
+			</div><a href="contact.html">Contact Me</a> <a href="about.html">About</a> <button class="btnclick" onclick="sign_out()">signout</button> <a class="icon" href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+		</div>
+	</section><br>
+	<section id="secondsection">
+		<div class="row">
+			<div class="leftcolumn">
+				<div class="card">
+					<h2>Gear-up</h2><img src="/assets/images/martin-katler-71MFodxIz8c-unsplash.jpg" width="100%">
+					<p><b>Welcome to my Blog</b></p>
+					<p>Here you will find a variety of latest news on new cars entering the automotive industry</p><button id="myyBtn">Continue reading</button>
+					<div class="modal" id="myModal">
+						<div class="modal-content">
+							<span class="close">&times;</span> <img src="/assets/images/martin-katler-71MFodxIz8c-unsplash.jpg">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repellat tenetur dolorum repudiandae eveniet officiis ipsum, ducimus non molestiae optio, beatae illo fuga nam cum labore ipsam perspiciatis? Modi, ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, nostrum ea pariatur voluptatum eveniet saepe ipsa eaque libero nam unde in dicta quod numquam eum quas veniam neque repudiandae excepturi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus perspiciatis quibusdam, fugit, ratione commodi quos laudantium explicabo repudiandae, saepe unde voluptatem necessitatibus. Libero praesentium iste, temporibus consectetur sequi accusantium. Ex!, Lorem ipsum dolor sit amet consectetur adipisicing elit. Non suscipit aspernatur aut quaerat nisi earum, consequuntur, voluptate mollitia, totam autem accusantium natus asperiores omnis. Dolores impedit blanditiis harum porro aspernatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, dolorem iusto! Vel aliquam earum sapiente provident corporis, non velit culpa eum commodi dolor, perspiciatis excepturi aperiam dolorum dignissimos omnis eius.</p>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<h2>gallery</h2>
+					<div class="fakeimg" style="height:200px;"></div>
+				</div>
+			</div>
+			<div class="rightcolumn">
+				<div class="card">
+					<h3>Popular Post</h3>
+					<div class="fakeimg" onclick="openModal(1)">
+						<img src="/assets/images/honda.jpg">
+						<p>9 second honda civic</p>
+					</div>
+					<div class="modal" id="myModal1">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal(1)">&times;</span>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repellat tenetur dolorum repudiandae eveniet officiis ipsum, ducimus non molestiae optio, beatae illo fuga nam cum labore ipsam perspiciatis? Modi, ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, nostrum ea pariatur voluptatum eveniet saepe ipsa eaque libero nam unde in dicta quod numquam eum quas veniam neque repudiandae excepturi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus perspiciatis quibusdam, fugit, ratione commodi quos laudantium explicabo repudiandae, saepe unde voluptatem necessitatibus. Libero praesentium iste, temporibus consectetur sequi accusantium. Ex!, Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem laudantium itaque animi ipsa? Cumque aperiam suscipit dicta omnis. Tempore suscipit animi dolorem esse, amet quis vero culpa itaque ratione iure! Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse neque ad qui veniam unde voluptas in corrupti earum deserunt. Exercitationem nihil itaque beatae, nisi quod deleniti earum veritatis doloribus quis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime perspiciatis dolor, optio suscipit, alias veniam tempora quam cupiditate temporibus unde vero fugit porro, accusantium enim placeat esse consectetur sit perferendis!</p>
+						</div>
+					</div>
+					<div class="fakeimg" onclick="openModal(2)">
+						<img src="/assets/images/rxi.jpg">
+						<p>20v Screamer</p>
+					</div>
+					<div class="modal" id="myModal2">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal(2)">&times;</span>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repellat tenetur dolorum repudiandae eveniet officiis ipsum, ducimus non molestiae optio, beatae illo fuga nam cum labore ipsam perspiciatis? Modi, ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, nostrum ea pariatur voluptatum eveniet saepe ipsa eaque libero nam unde in dicta quod numquam eum quas veniam neque repudiandae excepturi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus perspiciatis quibusdam, fugit, ratione commodi quos laudantium explicabo repudiandae, saepe unde voluptatem necessitatibus. Libero praesentium iste, temporibus consectetur sequi accusantium. Ex! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolores eos odio laudantium enim, ratione tenetur molestiae error? Iusto maiores nobis eos praesentium ratione incidunt corporis dolore laboriosam atque eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tenetur laborum quis voluptates, velit nobis consectetur ea, ratione quibusdam itaque ducimus molestiae beatae ipsam voluptas debitis esse aliquid consequuntur doloribus?</p>
+						</div>
+					</div>
+					<div class="fakeimg" onclick="openModal(3)">
+						<img src="/assets/images/supra%20mk4.jpg">
+						<p>1500hp Supra</p>
+					</div>
+					<div class="modal" id="myModal3">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal(3)">&times;</span>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repellat tenetur dolorum repudiandae eveniet officiis ipsum, ducimus non molestiae optio, beatae illo fuga nam cum labore ipsam perspiciatis? Modi, ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, nostrum ea pariatur voluptatum eveniet saepe ipsa eaque libero nam unde in dicta quod numquam eum quas veniam neque repudiandae excepturi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus perspiciatis quibusdam, fugit, ratione commodi quos laudantium explicabo repudiandae, saepe unde voluptatem necessitatibus. Libero praesentium iste, temporibus consectetur sequi accusantium. Ex!</p>
+						</div>
+					</div>
+					<div class="fakeimg" onclick="openModal(4)">
+						<img src="/assets/images/auto-3102299_1280.jpg">
+						<p>Classic mustang going for R3million</p>
+					</div>
+					<div class="modal" id="myModal4">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal(4)">&times;</span>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repellat tenetur dolorum repudiandae eveniet officiis ipsum, ducimus non molestiae optio, beatae illo fuga nam cum labore ipsam perspiciatis? Modi, ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, nostrum ea pariatur voluptatum eveniet saepe ipsa eaque libero nam unde in dicta quod numquam eum quas veniam neque repudiandae excepturi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus perspiciatis quibusdam, fugit, ratione commodi quos laudantium explicabo repudiandae, saepe unde voluptatem necessitatibus. Libero praesentium iste, temporibus consectetur sequi accusantium. Ex!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="thirdsection">
+		<div class="vids">
+			<h2>Latests News</h2>
+			<div class="rows">
+				<div class="columns" style="background-color:#333;">
+				<h3>The new nissan Z proto</h3><img src="/assets/images/z%20proto.jpg"></div>
+				<div class="columns" style="background-color:#333;">
+				<h3>BMW M4 2021</h3><img src="/assets/images/2021-bmw-m4-coupe-111-1600787953.jpg"></div>
+				<div class="columns" style="background-color:#333;">
+				<h3>Supra from hell</h3><img src="/assets/images/2021-Toyota-Supra.jpg"></div>
+				<div class="columns" style="background-color:#333;">
+				<h3>Testla cybertruck</h3><img src="/assets/images/cybertruck.jpg"></div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<p>Copyrights &2020</p>
+	</footer>
+	<script src="/static/js-folder/main.js">
+	</script>
 </body>
 </html>

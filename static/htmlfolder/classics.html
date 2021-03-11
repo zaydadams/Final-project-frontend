@@ -1,85 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="/static/cssfolder/classics.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="topnav" id="myTopnav">
-      <a href="Home.html"><i class="fa fa-fw fa-home"></i>Home</a>
-      <div class="dropdown">
-        <button class="dropbtn">
-          Content
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="latest.html">Latest cars</a>
-          <a class="active" href="classics.html"
-            >Add Blogs</a
-          >
-          <a href="street.html">User Blogs</a>
-        </div>
-      </div>
-      <a href="about.html">About</a>
-      <button class="btnclick" onclick="sign_out()">signout</button>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()"
-        >&#9776;</a
-      >
-    </div>
-    <br /><br />
-    <section class="firstsection">
-      <h2>Add your post to website</h2>
-    </section>
-    <section class="secondsection">
-      <div class="forms">
-        <form
-          onsubmit="event.preventDefault(); addPost()"
-          id="addP"
-          class="input-group-register"
-        >
-          <input
-            type="text"
-            name="image"
-            class="input-field"
-            placeholder="add image link"
-            required
-          />
-          <input
-            type="text"
-            name="title"
-            class="input-field"
-            placeholder="title"
-            required
-          />
-          <input
-            type="text"
-            name="year"
-            class="input-field"
-            placeholder="year"
-            required
-          />
-          <input
-            type="text"
-            name="description"
-            class="input-field"
-            placeholder="description"
-            required
-          />
-          <button type="submit" class="submit-btn">Post</button>
-        </form>
-      </div>
-    </section>
-    <section>
-      <button onclick="">delete your account
-      </button>
-    </section>
-    <script src="/static/js-folder/main.js"></script>
-    <script src="/static/js-folder/createblog.js"></script>
-  </body>
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/static/cssfolder/classics.css" rel="stylesheet">
+	<title>Document</title>
+</head>
+<body>
+	<div class="topnav" id="myTopnav">
+		<a href="Home.html"><i class="fa fa-fw fa-home"></i>Home</a>
+		<div class="dropdown">
+			<button class="dropbtn">Content <i class="fa fa-caret-down"></i></button>
+			<div class="dropdown-content">
+				<a href="latest.html">Latest cars</a> <a class="active" href="classics.html">Add Blogs</a> <a href="street.html">User Blogs</a>
+			</div>
+		</div><a href="contact.html">Contact Me</a> <a href="about.html">About</a> <button class="btnclick" onclick="sign_out()">signout</button> <a class="icon" href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+	</div><br>
+	<br>
+	<section class="firstsection">
+		<h2>Add your post to website</h2>
+	</section>
+	<section class="secondsection">
+		<div class="forms">
+			<form class="input-group-register" id="addP" name="addP" onsubmit="event.preventDefault(); addPost()">
+				<input class="input-field" name="image" placeholder="add image link" required="" type="text"> <input class="input-field" name="title" placeholder="title" required="" type="text"> <input class="input-field" name="year" placeholder="year" required="" type="text"> <input class="input-field" name="description" placeholder="description" required="" type="text"> <button class="submit-btn" type="submit">Post</button>
+			</form>
+		</div>
+	</section>
+	<section>
+		<button onclick="">delete your account</button>
+	</section>
+	<script src="/static/js-folder/main.js">
+	</script> 
+	<script src="/static/js-folder/createblog.js">
+	</script>
+</body>
 </html>
