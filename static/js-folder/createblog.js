@@ -9,7 +9,7 @@ function addPost() {
   };
 
   console.log(blog);
-  fetch("http://127.0.0.1:5000/addP/",{
+  fetch("https://enigmatic-sea-74675.herokuapp.com/addP/",{
     method: "POST",
     body: JSON.stringify(blog),
     headers: {
@@ -24,30 +24,16 @@ function addPost() {
     });
 }
 
+function deleteUser(){
+  fetch('https://enigmatic-sea-74675.herokuapp.com/delete-clients/')
+  .then(res => res.json())
+  .then(data => {
+    console.log(data);
+    let username = inputs[].value
+    let pswd = inputs[].value
+
+    console.log(data)
 
 
-function getPost(){
-  .fetch("https://enigmatic-sea-74675.herokuapp.com/addP/")
-  .then((response) => response.json())
-  .then((data) => {
-      console.table(table);
-      let list = document.getElementById('products');
-      data.forEach((post) => {
-          let item = `
-          <div class="post-container">
-              <div class="title">
-                  <h2>${post.title}</h2>
-              </div>
-              <div class="message">
-                  <p>${post.message}</p>
-              </div>
-              <div class="image">
-                  <p>${post.image}</p>
-              </div>
-          </div>
-          `;
-          list.innerHTML += item;
-      });
-  });
+  }
 }
-displayPosts();

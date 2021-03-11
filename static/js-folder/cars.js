@@ -1,5 +1,5 @@
 function getCars(){
-    fetch('http://127.0.0.1:5000/show-posts/')
+    fetch('https://enigmatic-sea-74675.herokuapp.com/show-posts/')
     .then(res => res.json())
     .then(data => {
         console.table(data);

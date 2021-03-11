@@ -5,7 +5,7 @@
     left: 0;
     right: 0;
     height: 100vh;
-    background-color: aqua;
+    background-color: #ff7300;
     animation: disappear 4s linear forwards;
     display: flex;
     justify-content: center;
