@@ -24,16 +24,5 @@ function addPost() {
     });
 }
 
-function deleteUser(){
-  fetch('https://enigmatic-sea-74675.herokuapp.com/delete-clients/')
-  .then(res => res.json())
-  .then(data => {
-    console.log(data);
-    let username = inputs[].value
-    let pswd = inputs[].value
-
-    console.log(data)
-
-
-  }
-}
+//
+a
