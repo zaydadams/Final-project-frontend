@@ -245,8 +245,7 @@ body {
 
 .rows:after {
 	content: "";
-	display: inline-flex;
-	
+	display: table;
 	clear: both;
 }
 .rows .columns img {
