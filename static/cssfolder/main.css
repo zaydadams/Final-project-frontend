@@ -221,10 +221,10 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-	.leftcolumn, .rightcolumn {
-		width: 100%;
-		padding: 0;
-	}
+.leftcolumn, .rightcolumn {
+	width: 100%;
+	padding: 0;
+}
 }
 .columns {
 	display: inline-flex;
@@ -245,12 +245,12 @@ body {
 
 .rows:after {
 	content: "";
-	display: table;
+	display: inline-flex;
+	
 	clear: both;
 }
 .rows .columns img {
 	width: 100%;
-	height: 300px;
 }
 .rows .columns h3 {
 	color: #fff;
@@ -358,4 +358,7 @@ body {
 }
 .modal-content img {
 	max-width: 300px;
+}
+.modal .modal-content p{
+	color: #000000;
 }

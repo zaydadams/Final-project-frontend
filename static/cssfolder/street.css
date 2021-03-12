@@ -170,3 +170,12 @@ body {
 .title {
 	font-size: 20px;
 }
+@media screen and (max-width: 800px){
+	#content{
+		display: inline-block;
+		width: 100%;
+	}
+	.car .image img{
+		width: 100px;
+	}
+}
