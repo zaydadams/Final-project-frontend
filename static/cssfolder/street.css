@@ -161,14 +161,23 @@ body {
 	margin-top: 10px;
 }
 .car {
-	display: grid;
+	display: flex-inline;
 	justify-content: center;
 }
-.content {
+#content {
+	display: block;
 	justify-content: center;
+	background: #fff;
 }
 .title {
-	font-size: 20px;
+	font-size: 15px;
+}
+.image img{
+	width: 300px;
+	height: 100%;
+}
+.description p{
+	font-size: 10px;
 }
 @media screen and (max-width: 800px){
 	#content{

@@ -13,6 +13,8 @@ function getCars(){
               <div class="image">
                   <img src=${post.image} alt=${post.image} />
               </div>
+              <div class="year">
+                  <p>Year:${post.year}</p>
               <div class="message">
                   <p>${post.description}</p>
               </div>

@@ -162,7 +162,7 @@ body {
 }
 
 .container{
-	display: flex;
+	display: grid;
 	justify-content: center;
 	align-items: center;
 	width: 500px;
@@ -170,14 +170,35 @@ body {
 
 .card{
 	display: block;
-	width: 500px;
 	justify-content: space-between;
 	align-content: center;
 	align-items: center;
 	padding: 10px;
+	left: 10px;
+	
 }
 .card img{
 	display: flex;
 	justify-content: space-around;
 	width: 100%;
+}
+.card p{
+	display: flex;
+	font-size: 20px;
+	
+}
+@media (max-width: 1000px){
+	
+	.card p{
+		font-size: 15px;
+
+	}
+	.card img{
+		width: 200px;
+	}
+}
+@media (max-width: 700px){
+	.card p{
+		font-size: 2px;
+	}
 }
