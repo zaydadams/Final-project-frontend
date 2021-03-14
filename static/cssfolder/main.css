@@ -239,6 +239,7 @@ body {
 .rows {
 	display: flex;
 	margin: 20px;
+	
 }
 .vids h2 {
 	font-size: 40px;
@@ -252,6 +253,7 @@ body {
 }
 .rows .columns img {
 	width: 100%;
+	height: 200px;
 }
 .rows .columns h3 {
 	color: #fff;
@@ -270,6 +272,10 @@ body {
 	}
 	.vids h3{
 		font-size: 10px;
+	}
+	.rows .columns img {
+		width: 100%;
+		height: 50px;
 	}
 }
 .btn {
