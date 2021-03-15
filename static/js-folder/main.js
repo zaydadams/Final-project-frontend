@@ -62,6 +62,7 @@ return user.email == eml && user.password == pssword;
 console.log(log);
 
 if (log.length > 0) {
+//let usern = document.getElementById("usermail").value;
 localStorage.setItem("thank_you", JSON.stringify(log[0]));
 alert("You have successfully logged in");
 window.location.href = "./static/htmlfolder/Home.html";
@@ -92,7 +93,8 @@ function insertUsers() {
     .then((json) => {
       console.log(json);
       alert("User has been created");
-      document.getElementById("register").reset();
+      location.reload();
+
     });
 }
 function sign_out() {
