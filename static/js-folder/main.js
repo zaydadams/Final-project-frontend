@@ -1,3 +1,4 @@
+//navbar function
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -7,7 +8,7 @@ function myFunction() {
   }
 }
 
-//contact form script//
+//login and register form script//
 
 const x = document.getElementById("login");
 const y = document.getElementById("register");
@@ -61,7 +62,6 @@ return user.email == eml && user.password == pssword;
 console.log(log);
 
 if (log.length > 0) {
-//let usern = document.getElementById("usermail").value;
 localStorage.setItem("thank_you", JSON.stringify(log[0]));
 alert("You have successfully logged in");
 window.location.href = "./static/htmlfolder/Home.html";
@@ -70,7 +70,7 @@ alert("Please enter a valid email and password");
 }
 }
 
-
+//register user 
 function insertUsers() {
   const form = document.getElementById("register");
   const inputs = form.getElementsByTagName("input");
@@ -100,7 +100,7 @@ function sign_out() {
   window.location.href = "/index.html";
 }
 
-// Get the modal
+//Modals
 var mode = document.getElementById("myModal");
 var btn = document.getElementById("myyBtn");
 var span = document.getElementsByClassName("close")[0];

@@ -1,3 +1,5 @@
+//test js file where i tested my js functions
+
 // Get the modal
 var modal = document.getElementById("myModal");
 

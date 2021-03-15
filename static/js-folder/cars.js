@@ -1,3 +1,5 @@
+//fetch user blogs from datatbase to display on website
+
 function getCars(){
     fetch('https://enigmatic-sea-74675.herokuapp.com/show-posts/')
     .then(res => res.json())

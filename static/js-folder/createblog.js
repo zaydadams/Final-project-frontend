@@ -1,3 +1,5 @@
+// function for User to add Blogs to website
+
 function addPost() {
   const form = document.getElementById("addP");
   const inputs = form.getElementsByTagName("input");
@@ -23,6 +25,3 @@ function addPost() {
       document.getElementById("addP").reset();
     });
 }
-
-//
-a
