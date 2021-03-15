@@ -45,30 +45,31 @@ fetch("https://enigmatic-sea-74675.herokuapp.com/login/")
 
 //login function//
 function logIN() {
-  // users = [];
-  let form = document.getElementById("login");
-  let inputs = form.getElementsByTagName("input");
+// users = [];
+let form = document.getElementById("login");
+let inputs = form.getElementsByTagName("input");
 
-  let eml = inputs[0].value;
-  let pssword = inputs[1].value;
-  console.log(eml);
-  console.log(pssword);
+let eml = inputs[0].value;
+let pssword = inputs[1].value;
+console.log(eml);
+console.log(pssword);
 
-  let log = users.filter((user) => {
-    return user.email == eml && user.password == pssword ? true : false;
-  });
+let log = users.filter((user) => {
+return user.email == eml && user.password == pssword;
+});
 
-  console.log(log);
+console.log(log);
 
-  if (log.length > 0) {
-    let usern = document.getElementById("usermail").value;
-    localStorage.setItem("thank_you", JSON.stringify(usern));
-    alert("You have successfully logged in");
-    window.location.href = "./static/htmlfolder/Home.html";
-  } else {
-    alert("Please enter a valid email and password");
-  }
+if (log.length > 0) {
+//let usern = document.getElementById("usermail").value;
+localStorage.setItem("thank_you", JSON.stringify(log[0]));
+alert("You have successfully logged in");
+window.location.href = "./static/htmlfolder/Home.html";
+} else {
+alert("Please enter a valid email and password");
 }
+}
+
 
 function insertUsers() {
   const form = document.getElementById("register");
@@ -126,3 +127,7 @@ window.onclick = function(event) {
     mode.style.display = "none";
   }
 }
+
+let phead = document.getElementById("personal-header")
+let userData = JSON.parse(localStorage.getItem("thank_you"))
+phead.innerHTML += " "+userData.name+" "+userData.surname+"!"
