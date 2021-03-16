@@ -178,11 +178,11 @@ body {
 	height: 100vh;
 }
 .head {
-	display: flex;
 	justify-content: center;
 }
 .head h1 {
 	font-size: 50px;
+	color: #fff;
 }
 .head p {
 	color: #fff;

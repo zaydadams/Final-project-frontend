@@ -161,19 +161,21 @@ body {
 	margin-top: 10px;
 }
 .car {
-	display: flex-inline;
+	align-items: center;
 	justify-content: center;
 }
+
 #content {
-	display: block;
+	display: grid;
 	justify-content: center;
 	background: #fff;
+	width: 100%;
 }
 .title {
 	font-size: 15px;
 }
 .image img{
-	width: 300px;
+	width: 500px;
 	height: 100%;
 }
 .description p{

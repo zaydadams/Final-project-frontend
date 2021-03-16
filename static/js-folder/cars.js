@@ -20,7 +20,7 @@ function getCars(){
               <div class="message">
                   <p>${post.description}</p>
               </div>
-          </div>
+           </div>
           `;
           list.innerHTML += item;
       });
